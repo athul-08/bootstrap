@@ -1,0 +1,43 @@
+<ng-container *ngIf="ngvals">
+    <div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"[ngClass]="columns[0]">#</th>
+                <th scope="col"[ngClass]="columns[1]">Id</th>
+                <th scope="col" [ngClass]="columns[2]">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">1</th>
+                <td [ngClass]="columns[1]">1</td>
+                <td [ngClass]="columns[2]">Sachin</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">2</th>
+                <td [ngClass]="columns[1]">2</td>
+                <td [ngClass]="columns[2]">Virat</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">3</th>
+                <td [ngClass]="columns[1]">3</td>
+                <td [ngClass]="columns[2]">Rohit</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">4</th>
+                <td [ngClass]="columns[1]">4</td>
+                <td [ngClass]="columns[2]">Dhoni</td>
+              </tr>
+              <tr>
+                <th scope="row"[ngClass]="columns[0]">5</th>
+                <td [ngClass]="columns[1]">5</td> 
+                <td [ngClass]="columns[2]">Sanju</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="abc" (click)="chng()">Change Style</button>
+        </div>
+    </ng-container>
+  <button class="button" (click)="shows()">Show Table</button>
+    <button class="button" (click)="hides()">Hide Table</button>
